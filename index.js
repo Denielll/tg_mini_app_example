@@ -1,5 +1,5 @@
 window.onload = function() {
-    document.getElementById('main-content').innerHTML = 'Hello, github pages test1'
+    document.getElementById('main-content').innerHTML = 'Hello, github pages test2'
   }
 
 
