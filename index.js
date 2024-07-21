@@ -1,10 +1,10 @@
 window.onload = function() {
-    document.getElementById('main-content').innerHTML = 'Hello, github pages test2'
+    document.getElementById('main-content').innerHTML = 'Hello, github pages test3'
   }
 
 
  document.addEventListener('DOMContentLoaded', (event) => {
-    const AdController = window.Adsgram.init({ blockId: "1061" });
+    const AdController = window.Adsgram.init({ blockId: 1061});
 
     // 假設您有一個按鈕用於觸發廣告
     const showAdButton = document.getElementById('showAdButton');
