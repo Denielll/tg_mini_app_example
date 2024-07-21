@@ -4,7 +4,7 @@ window.onload = function() {
 
 
  document.addEventListener('DOMContentLoaded', (event) => {
-    const AdController = window.Adsgram.init({ blockId: "your-block-id" });
+    const AdController = window.Adsgram.init({ blockId: "1061" });
 
     // 假設您有一個按鈕用於觸發廣告
     const showAdButton = document.getElementById('showAdButton');
