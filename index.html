@@ -1,4 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test app</title>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+    </head>
+    <body>
+        <button id="ad">Show ad</button>
+        <script>
+            // insert your block id
+            const AdController = window.Adsgram.init({ blockId: "1061" });
+            const button = document.getElementById('ad');
+            button.addEventListener('click', () => {
+                AdController.show().then((result) => {
+                    // user watch ad till the end
+                    // your code to reward user
+                    alert('Reward');
+                }).catch((result) => {
+                    // user skipped video or get error during playing ad
+                    // do nothing or whatever you want
+                    alert(JSON.stringify(result, null, 4));
+                })
+            })
+        </script>
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -14,4 +44,4 @@
     <div id="main-content"></div>
     <button id="showAdButton">Show Ad</button>
 </body>
-</html>
+</html> -->
